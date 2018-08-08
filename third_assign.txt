@@ -1,0 +1,39 @@
+Q1) >>> ch=["thor","loki","thanos"]
+    >>> ch
+Output : ['thor', 'loki', 'thanos']
+
+Q2) >>> ch.append("google")
+    >>> ch.append("apple")
+    >>> ch.append("facebook")
+    >>> ch.append("microsoft")
+    >>> ch.append("tesla")
+    >>> ch
+Output: ['thor', 'loki', 'thanos', 'google', 'apple', 'facebook', 'microsoft', 'tesla']
+
+Q3) >>> ch.count("google")
+Output: 1
+
+    >>> ch.count("loki")
+Output: 1
+
+Q4) >>> Numbers=[8,3,6,1,9,3,2]
+    >>> Numbers.sort()
+    >>> Numbers
+Output: [1, 2, 3, 3, 6, 8, 9]
+
+Q5) >>> array1=[4,2,5,3,1]
+    >>> array1.sort()
+    >>> array2=[9,8,10,7,6]
+    >>> array2.sort()
+    >>> array1.extend(array2)
+    >>> array1
+Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+               OR
+
+    >>> array1=[4,2,5,3,1]
+    >>> array2=[9,8,10,7,6]
+    >>> array1.extend(array2)
+    >>> array1.sort()
+    >>> array1
+Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
