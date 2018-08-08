@@ -1,0 +1,24 @@
+Q1) >>> print("This is my second assignment")
+Output: This is my second assignment
+
+Q2) >>> print('Sherlock'+' '+'Holmes')
+Output: Sherlock Holmes
+
+Q3) >>> x=31
+    >>> y=1
+    >>> z=1998
+    >>> print("x = ",x,"y = ",y,"z = ",z)
+Output: x =  31 y =  1 z =  1998
+
+Q4) >>> print("Let's get started")
+Output: Let's get started
+
+Q5) >>> print('s="Acadview" \n course="Python" \n fees=5000')
+Output: s="Acadview" 
+ 	course="Python" 
+ 	fees=5000
+
+Q6) >>> name="Tony Stark"
+    >>> salary=1000000
+    >>> print(('%s''%d')%(name,salary))
+Output: Tony Stark1000000
