@@ -1,0 +1,32 @@
+GIT COMMANDS :
+
+1)config. :
+  helps the user to register with git using email id and username.
+  it also views the git configurations.
+
+2)init :
+  it's short for initialize. when we run this command, it initialize a hidden directory called .git in the project root directory.
+
+3)status :
+  this command is used to check the status of current file for any changes or modifications.
+
+4)add :
+  this command is used to add the file for Git to know which file to track.
+
+5)commit :
+  this command is used to commit the changes made in the file and also keep track of the copies of the file. Git creates history of our commits to make it tracable.
+
+6)rm :
+  this command is used to remove files from staged area.
+
+7)reset :
+  this command is used as an alternativefor rm command.
+
+8)push :
+  this command tell Git to push files into a remote repository.
+
+9)clone :
+  this command copies the entire project to a directory automatically created with the same project name on our computer.
+
+10)pull :
+  this command is used to pull changes made by other developers and synchronize local repository with the remote repository.
