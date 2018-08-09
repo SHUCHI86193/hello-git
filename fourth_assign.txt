@@ -1,0 +1,59 @@
+		TUPLES
+
+   >>> tuple1=[3,6,8,11,66,78]
+
+1) >>> len(tuple1)
+Output: 6
+
+2) >>> max(tuple1)
+Output: 78
+   >>> min(tuple1)
+Output: 3
+
+3) >>> t=(1,2,3,4,5)
+   >>> result=1
+   >>> for i in t:
+	result = result * i	
+   >>> result
+Output: 120
+
+                SETS
+
+
+    >>> s1={1,2,3,4,5,6,7}
+    >>> s2={4,5,6,18,19}
+
+1)  >>> s1-s2
+Output: {1, 2, 3, 7}
+    >>> s2-s1
+Output: {18, 19}
+
+2)  >>> s1<=s2
+Output: False
+
+3)  >>> s1 & s2
+Output: {4, 5, 6}
+
+
+                DICTIONARIES
+
+1)  >>> d={'anu' : 98, 'ani' : 97, 'ashu' : 96, 'ashi' : 95, 'eha' : 94, 
+           'ella' : 9,  'asha' : 92, 'adya' : 91, 'adi' : 90, 'alya' : 89}
+
+2)  >>> sorted(d.values())
+Output: [9, 89, 90, 91, 92, 94, 95, 96, 97, 98]
+
+3)  >>> w='MISSISSIPPI'
+    >>> w1=list(w)
+    >>> w1
+Output: ['M', 'I', 'S', 'S', 'I', 'S', 'S', 'I', 'P', 'P', 'I']
+
+    >>> w1.count("M")
+Output: 1
+    >>> w1.count("I")       
+Output: 4
+    >>> w1.count("S")
+Output: 4
+    >>> w1.count("P")
+Output: 2
+    >>> d={'M' : 1, 'I' : 4, 'S' : 4, 'P' : 2}
