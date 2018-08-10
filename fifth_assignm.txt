@@ -1,0 +1,75 @@
+Q1)
+
+year=int(input("Enter Any Year :"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("It is a Leap year")
+
+        else:
+            print("It is not a Leap year")
+    else:
+        print("It is a Leap year")
+else:
+    print("It is not a Leap year")
+
+
+Q2)
+
+Length=int(input("Enter Length :"))
+Breadth=int(input("Enter Breadth :"))
+if Length==Breadth:
+    print("The dimensions are of Square")
+else:
+    print("The dimensions are of Rectangle")
+
+
+Q3)
+
+a=int(input("Enter age of A :"))
+b=int(input("Enter age of B :"))
+c=int(input("Enter age of C :"))
+if a>b and a>c:
+    print("A is oldest")
+    if b>c:
+        print("C is youngest")
+    else:
+        print("B is youngest")
+elif b>a and b>c:
+    print("B is oldest")
+    if a>c:
+        print("C is youngest")
+    else:
+        print("A is youngest")
+else:
+    print("C is oldest")
+    if a>b:
+        print("B is youngest")
+    else:
+        print("A is youngest")
+
+
+Q4)
+
+points=int(input("Enter total points :"))
+if points>=1 and points<=50:
+    print("Sorry!No prize this time.")
+elif points>=51 and points<=150:
+    print("Congratulations! You won a Wooden Dog!")
+elif points>=151 and points<=180:
+    print("Congratulations! You won a Book!")
+elif points>=181 and points<=200:
+    print("Congratulations! You won a Chocolates!")
+else:
+    print("Please enter value between 1 and 200")
+
+
+Q5)
+
+quantity=int(input("Enter Quantity :"))
+cost=quantity*100
+if cost>1000:
+    tc=cost-(0.10*cost)
+else:
+    tc=cost
+print("Total Cost :",tc)
