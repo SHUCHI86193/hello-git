@@ -1,0 +1,84 @@
+'Q1)'
+
+class Animal:
+    def animal_attribute(self):
+        print("Tiger has 4 legs")
+        print("tigers are carnivores")
+
+class Tiger(Animal):
+    def print(self):
+        print("Attributes of tiger :")
+
+'Q2)'
+
+A B
+
+'Q3)'
+
+class Cop:
+    def __init__(self):
+        self.n=input("enter name:")
+        self.a=int(input("enter age:"))
+        self.w=int(input("enter work-experiance:"))
+        self.d=input("enter designation:")
+
+    def add(self):
+        self.h=input("enter hobbies")
+
+    def display(self):
+        print("NAME :",self.n)
+        print("AGE :",self.a)
+        print("WORK EXPERIANCE :",self.w)
+        print("DESIGNATION :",self.d)
+        print("HOBBIES :",self.h)
+
+    def update(self):
+        print("Update the details")
+        self.n=input("enter name:")
+        self.a=int(input("enter age:"))
+        self.w=int(input("enter work experiance:"))
+        self.d=input("enter designation:")
+
+class Mission(Cop):
+    def __init__(self):
+        print("MISSION :")
+        
+    def add_mission_details(self):
+        print("Arrest the thief")
+
+ob=Cop()
+ob.add()
+ob1=Mission()
+ob1.add_mission_details()
+ob.display()
+ob.update()
+
+'Q4)'
+
+class Shape:
+    def __init__(self):
+        self.l=int(input("enter length:"))
+        self.b=int(input("enter breadth:"))
+        self.a=0
+        
+    def area(self):
+        self.a=self.l*self.b
+
+class Rectangle(Shape):
+    
+    def print(self):
+        print("Area of rectangle is :",self.a)
+        
+class Square(Shape):
+    
+    def print(self):
+        print("Area of square is :",self.a)
+
+
+ob1=Rectangle()
+ob1.area()
+ob1.print()
+ob2=Square()
+ob2.area()
+ob2.print()
+
