@@ -1,0 +1,83 @@
+'Q1)'
+
+class Circle:
+    def __init__ (self):
+        self.r=float(input("Enter the radius:"))
+        self.a=0.0
+        self.c=0.0
+
+    def getArea(self):
+        self.a=3.14*self.r*self.r
+        print("The area is:",self.a)
+
+    def getCircum(self):
+        self.c=2*3.14*self.r
+        print("The circumference is:",self.c)
+
+'Q2)'
+
+class Student:
+    def __init__ (self):
+        self.n=input("Enter the name:")
+        self.r=int(input("Enter the roll:"))
+
+    def display(self):
+        print("The name of the student is:",self.n)
+        print("The name of the roll is:",self.r)
+
+'Q3)'
+
+class Temperature:
+    def __init__ (self):
+        self.t=int(input("Enter the temperature:"))
+        self.f=0
+        self.c=0
+
+    def convertFahrenheit(self):
+        self.f=self.t*1.8+32
+        print("The temperature in fahrenheit is:",self.f)
+        
+    def convertCelsius(self):
+        self.c=(self.t-32)*.5556
+        print("The temperature in celsius is:",self.c)
+
+'Q4)'
+
+class MovieDetails:
+    def __init__ (self):
+        self.n=input("Enter the movie name:")
+        self.a=input("Enter the artist name:")
+        self.y=int(input("Enter the year of release:"))
+        self.r=float(input("Enter the movie ratings:"))
+        
+
+    def display(self):
+        print("The name of the movie is:",self.n)
+        print("The name of the artist is:",self.a)
+        print("The year of release of the movie is:",self.y)
+        print("The ratings of the movie is:",self.r)
+        
+    def update(self):
+        self.n=input("Enter the movie name:")
+        self.a=input("Enter the artist name:")
+        self.y=int(input("Enter the year of release:"))
+        self.r=float(input("Enter the movie ratings:"))
+
+'Q5)'
+
+class Expenditure:
+    def __init__ (self):
+        self.e=int(input("Enter the expenditure:"))
+        self.s=int(input("Enter the savings:"))
+        self.t=0
+
+    def display(self):
+        print("The expenditure is:",self.e)
+        print("The savings is:",self.s)
+        
+    def totalSalary(self):
+        self.t=self.e+self.s
+
+    def salary(self):
+        print("salary is :",self.t)
+
