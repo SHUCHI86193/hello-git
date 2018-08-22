@@ -1,0 +1,50 @@
+'Q1)'
+
+An access token is an object that describes the security context of a process. It is used to make security decisions about some system entity.
+Sendgrid api =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
+
+'Q2)'
+
+'for Google:'
+
+import socket
+print (socket.gethostbyname('localhost'))
+print (socket.gethostbyname('google.com'))
+
+'for facebook:'
+
+import socket
+print (socket.gethostbyname('localhost'))
+print (socket.gethostbyname('facebook.com'))
+
+'Q3)'
+
+' verification problem'
+
+'Q4)'
+
+'''API is an interface between two software programs for interaction purpose
+   Ex- Amazon.com released its API so that Web site developers could more easily access Amazon's product information.
+   Library contains reusable chunks of code which is linked to our program through APIs
+   Ex- Math library,Date etc
+'''
+
+'Q5)'
+
+'email through sendgrid'
+
+import sendgrid
+import os
+from sendgrid.helpers.mail import *
+
+sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
+from_email = Email("shuchi.sharma86193@gmail.com")
+to_email = Email("shuchi.sharma86193@gmail.com")
+subject = "Sending with SendGrid is Fun"
+content = Content("text/plain", "and easy to do anywhere, even with Python")
+mail = Mail(from_email, subject, to_email, content)
+response = sg.client.mail.send.post(request_body=mail.get())
+
+print(response.status_code)
+print(response.body)
+print(response.headers)
