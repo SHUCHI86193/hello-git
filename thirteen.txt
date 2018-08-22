@@ -1,0 +1,67 @@
+'Q1)'
+
+'The exception is Zero Division Error'
+
+try:
+    a=3
+    if a<4:
+        a=a/(a-3)
+        print(a)
+except ZeroDivisionError:
+    print("the error is handled")
+
+'Q2)'
+
+'The exception is Index Error'
+
+try:
+    l=[1,2,3]
+    print(l[3])
+except IndexError:
+    print("the error is handled")
+
+'Q3)'
+
+An exception
+Traceback (most recent call last):
+  File "d:/Desktop/q.py", line 2, in <module>
+    raise NameError("Hi there")  
+NameError: Hi there
+
+'Q4)'
+
+-5.0
+a/b result in 0
+
+'Q5)'
+
+try:
+    l=[1,2,3]
+    i=int(input("enter index not more than 2 :"))
+    print(l[i])
+    j=int(input("enter a number :"))
+    print(j)
+    import email.MIMEMultipart
+except IndexError:
+    print("Index error is handled")
+except ModuleNotFoundError:
+    print("Import error is handled")
+except ValueError:
+    print("Valuee error is handled")
+
+'Q6)'
+
+class AgeTooSmallError(NameError):
+    def __init__(self,msg,age):
+        self.msg=msg
+        self.age=age
+try:
+    age=int(input("Enter age :"))
+    if(age<18):
+        raise AgeTooSmallError("Warning : Enter age more than or equal to 18",age)
+except AgeTooSmallError as e:
+    while(e.age<18):
+        print(e.msg)
+        age=int(input("Enter age :"))
+else:
+    print("Age entered is valid")
