@@ -1,0 +1,55 @@
+'Q1)'
+
+with open("d:\\Desktop\\file1.txt") as myfile:
+    l=int(input("enter the n lines to be printed:"))
+    while(l>0):
+        print (list(myfile)[-l])
+        l-=1
+myfile.close()
+
+'Q2)'
+
+import re
+import string
+d = {}
+f= open('d:\\Desktop\\file1.txt', 'r')
+a= f.read().lower()
+x= re.findall(r'\b[a-z]+\b',a)
+for word in x:
+    count = d.get(word,0)
+    d[word] = count + 1
+l= d.keys()
+for words in l:
+    print(words," ",d[words])
+
+'Q3)'
+
+with open("d:\\Desktop\\file1.txt","rb") as f1:
+    var=f1.read()
+with open("d:\\Desktop\\file2.txt","wb") as f2:
+    f2.write(var)
+
+'Q4)'
+
+with open('d:\\Desktop\\file1.txt') as f1, open('d:\\Desktop\\file2.txt') as f2:
+    for line1 in f1:
+        for line2 in f2:
+            print(line1+line2)
+
+'Q5)'
+
+f=open("d:\\Desktop\\file.txt","w")
+print("enter 10 numbers :")
+w=[]
+for num in range(5):
+    num=int(input())
+    w.append(num)
+    f.write(str(num))
+    f.write(" ")
+f.close()
+f1=open("d:\\Desktop\\file.txt","r")
+f2=open("d:\\Desktop\\file3.txt","w")
+w.sort()
+f2.writelines(str(w))
+f2.close()
+f1.close()
