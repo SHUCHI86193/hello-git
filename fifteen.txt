@@ -1,0 +1,38 @@
+'Q1)'
+
+import re
+
+emails='''zuck26@facebook.com page33@google.com
+jeff42@amazon.com'''
+var=re.findall("[\w]{1,20}@[\w]{1,20}.[\w]{1,20}",emails)
+print(var)
+
+
+'Q2)'
+
+import re
+
+text ='''Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better.'''
+var=re.findall("[bB][a-zA-Z]*",text)
+for i in var:
+    print(i)
+
+'Q3)'
+
+import re
+
+sentence = "A,very very;irregular_sentence"
+var=re.sub('\W',' ',sentence)
+var=re.sub('_',' ',var)
+print(var)
+
+'Q4)'
+
+import re
+
+tweet = '''Good advice! RT @TheNextWeb: What I would do differently if I was learning to code today http://t.co/lbwej0pxOd cc: @garybernhardt #rstats'''
+var=re.sub("[\w]{1,20}://[\w]{1,20}.[\w]{1,4}/[\w]{1,20}",' ',tweet)
+var=re.sub("[\w]{1,5}: @[\w]{1,20} #[\w]{1,20}",' ',var)
+var=re.sub("@[\w]{1,20}: ",' ',var)
+var=re.sub("! [\w]{1,10} ",'',var)
+print(var)
