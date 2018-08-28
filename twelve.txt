@@ -1,8 +1,7 @@
 'Q1)'
 
 An access token is an object that describes the security context of a process. It is used to make security decisions about some system entity.
-Sendgrid api =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
-
+Sendgrid api 
 'Q2)'
 
 'for Google:'
