@@ -43,7 +43,6 @@ cursor.execute("update Titles set title='tempest' where title_id=2001")
 dataupdate=cursor.fetchall()
 print(dataupdate)
 db.close()
-cursor.execute(
 
 
 
