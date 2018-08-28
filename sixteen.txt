@@ -1,0 +1,50 @@
+'Q1)' 
+
+import MySQLdb
+
+db=MySQLdb.connect("localhost","root","aeiou12345","library")
+cursor=db.cursor()
+cursor.execute("create table if not exists Books(book_id int(2), title_id int(4), location varchar(10), genre varchar(10))")
+cursor.execute("create table if not exists Titles(title_id int(4), title varchar(20), ISBN varchar(20), publisher_id int(5), publication_year int(4))")
+cursor.execute("create table if not exists Author_Titles(auther_title_id int(2), auther_id int(4), title_id int(4))")
+cursor.execute("create table if not exists Publishers(publisher_id int(2), name varchar(30), street_address varchar(30), s_number int(10), zipcode int(6))")
+cursor.execute("create table if not exists Authors(author_id int(4), firstname varchar(10), middlename varchar(10), lastname varchar(10))")
+cursor.execute("create table if not exists Zipcodes(zipcode_id int(2), city varchar(20), state varchar(20), zipcode int(6))")
+db.commit()
+db.close()
+
+'Q2)'
+
+db=MySQLdb.connect("localhost","root","aeiou12345","library")
+cursor=db.cursor()
+cursor.execute("insert into Books(book_id, title_id, location, genre) values(01,1001,"s1","sci-fi")")
+db.commit()
+cursor.execute("insert into Titles(title_id, title, ISBN, publisher_id) values(2001,"as you like it","abc123",10001)")
+db.commit()
+cursor.execute("insert into Author_Titles(auther_title_id, auther_id, title_id) values(11,1001,10)")
+db.commit()
+cursor.execute("insert into Publishers(publisher_id, name, street_address, s_number, zipcode) values(21,"abc","s44,vvvv",11111,248002)")
+db.commit()
+cursor.execute("insert into Authors(author_id, firstname, middlename, lastname) values(2001,"abhi","kumar","mishra")")
+db.commit()
+cursor.execute("insert into Zipcodes(zipcode_id, city, state, zipcode) values(41,"dehradun","uttarakhand",248002)")
+db.commit()
+db.close()
+
+'Q3)'
+
+db=MySQLdb.connect("localhost","root","aeiou12345","library")
+cursor=db.cursor()
+cursor.execute("select * from Titles where title_id=2001")
+data=cursor.fetchall()
+print(data)
+cursor.execute("select * from Titles")
+cursor.execute("update Titles set title='tempest' where title_id=2001")
+dataupdate=cursor.fetchall()
+print(dataupdate)
+db.close()
+cursor.execute(
+
+
+
+
