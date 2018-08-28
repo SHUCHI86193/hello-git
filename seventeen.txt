@@ -1,0 +1,94 @@
+'Q1)'
+
+from tkinter import *
+
+root = Tk()
+root.geometry("600x600")
+root.title("GUI")
+
+f1=Frame(root,height=300,width=300,bg="green")
+f1.pack()
+
+l1=Label(f1,text="Hello World",font=('ALGERIAN',40,'bold'))
+l1.pack(side=TOP)
+
+b1=Button(root,font=('ALGERIAN',10,'bold'),text="Exit",height=5,width=20,command=root.destroy)
+b1.pack(side=BOTTOM)
+
+root.mainloop
+
+'Q2)'
+
+from tkinter import *
+
+root = Tk()
+root.geometry("200x200")
+root.title("GUI")
+def msg():
+    print("This is a GUI exercise")
+
+f1=Frame(root,height=50,width=50)
+f1.pack(side=TOP)
+
+b1=Button(f1,font=('ALGERIAN',10,'bold'),text="CLICK ME",height=5,width=10,command=msg)
+b1.pack()
+root.mainloop()
+
+'Q3)'
+
+from tkinter import *
+
+root = Tk()
+root.geometry("400x400")
+root.title("GUI")
+def msg():
+    l1["text"]="This is a GUI exercise"
+
+f1=Frame(root,height=50,width=50)
+f1.pack(side=TOP)
+
+
+f2=Frame(root,height=50,width=50)
+f2.pack(side=BOTTOM)
+
+b1=Button(f2,font=('ALGERIAN',10,'bold'),text="EXIT",height=5,width=10,command=root.destroy)
+b1.pack(side=LEFT)
+
+b2=Button(f2,font=('ALGERIAN',10,'bold'),text="CLICK",height=5,width=10,command=msg)
+b2.pack(side=RIGHT)
+
+l1=Label(f1,font=('ALGERIAN',10,'bold'),text="GUI")
+l1.pack()
+
+root.mainloop()
+
+'Q4)'
+
+from tkinter import *
+
+root = Tk()
+root.geometry("400x400")
+root.title("GUI")
+def num():
+    print(e1.get())
+
+f1=Frame(root,height=100,width=100)
+f1.pack(side=TOP)
+
+l1=Label(f1,text="ENTER A NUMBER :").grid(row=0)
+
+e1=Entry(f1)
+e1.grid(row=0,column=1)
+
+
+f2=Frame(root,height=100,width=100)
+f2.pack(side=BOTTOM)
+
+b1=Button(f2,font=('ALGERIAN',10,'bold'),text="PRINT",height=5,width=20,command=num)
+b1.pack(side=LEFT)
+
+l2=Label(f1,font=('ALGERIAN',10,'bold')).grid(row=1)
+
+
+root.mainloop()
+
