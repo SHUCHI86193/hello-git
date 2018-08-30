@@ -1,0 +1,42 @@
+'Q1)'
+
+import numpy as np
+
+a=np.random.random((10,1))
+print(a,"\n")
+print("Mean of the numbers :",a.sum()/10)
+
+'Q2)'
+
+import numpy as np
+
+a=np.random.random((20,1))
+print(a,"\n")
+print("Variance of the numbers :",np.var(a),"\n")
+print("Standard deviation of the numbers :",np.std(a))
+
+'Q3)'
+
+import numpy as np
+
+a=np.random.random((10,20))
+b=np.random.random((20,25))
+c=np.dot(a,b)
+print(c)
+
+print("\nSum of all the elements :",c.sum())
+
+'4)'
+
+import numpy as np
+import math
+
+def f(num):
+    z=1/(1+math.exp(-num))
+    return z
+
+a=np.random.random((10,1))
+n=np.ravel(a)
+for i in range(len(a)):
+        n[i]=f(n[i])
+print(n)
