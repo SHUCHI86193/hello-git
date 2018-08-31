@@ -1,0 +1,56 @@
+'Q1)'
+
+import pandas as pd
+
+d={'Name':['ani','abhi','adi','asha','adya'],'Age':[21,22,23,24,25],'Email':['abc@yahoo.com','def@gmail.com','ghi@hotmail.com','jkl@outlook.com','mno@gmail.com'],'P_no':[1234567,2345678,3456789,4567890,5678901]}
+df=pd.DataFrame(d)
+print(df)
+
+'Q2)'
+
+'a)'
+
+import pandas as pd
+
+f=pd.read_csv("d:\\Desktop\\dataset.csv",index_col=0)
+df=pd.DataFrame(f)
+print(df.head(5))
+
+'b)'
+
+import pandas as pd
+
+f=pd.read_csv("d:\\Desktop\\dataset.csv",index_col=0)
+df=pd.DataFrame(f)
+print(df.head(10))
+
+'c)'
+
+import pandas as pd
+import numpy as np
+
+df=pd.read_csv("d:\\Desktop\\dataset.csv")
+print(df['MinTemp'].describe())
+print(df['MaxTemp'].describe())
+
+
+'d)'
+
+import pandas as pd
+
+f=pd.read_csv("d:\\Desktop\\dataset.csv",index_col=0)
+df=pd.DataFrame(f)
+print(df.tail(5))
+
+'e)'
+
+import pandas as pd
+import numpy as np
+
+df=pd.read_csv("d:\\Desktop\\dataset.csv")
+d=[df['MinTemp'].mean(),
+df['MinTemp'].median(),
+df['MinTemp'].max(),
+df['MinTemp'].min()]
+
+print(d)
